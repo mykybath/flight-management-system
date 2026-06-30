@@ -3,7 +3,7 @@ Flight Management Database
 This project is a relational database system built using SQLite and Python.
 It models a flight management system that stores and manages data for pilots, destinations, flights, and work schedules.
 
-The project demonstrates practical database design, SQL querying, and integration with a Python application.
+The project demonstrates practical database design, SQL querying and integration with a Python application.
 
 Database Design
 
