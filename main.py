@@ -3,17 +3,16 @@ from db import get_connection
 conn = get_connection()
 c = conn.cursor()
 
-#I HAVE LEFT THESE SELECT QUERIES HERE SO YOU CAN EASILY SEE THEM WHEN TESTING THE FUNCTIONS
-c.execute("SELECT * FROM Pilot WHERE LicenseNumber = 'I12345678';")
-print(c.fetchone())
-c.execute("SELECT * FROM Destination WHERE DestinationID = '1';")
-print(c.fetchone())
-c.execute("SELECT * FROM Flight WHERE Status = 'Delayed';")
+#c.execute("SELECT * FROM Pilot WHERE LicenseNumber = 'I12345678';")
+#print(c.fetchone())
+#c.execute("SELECT * FROM Destination WHERE DestinationID = '1';")
+#print(c.fetchone())
+#c.execute("SELECT * FROM Flight WHERE Status = 'Delayed';")
 #this one looks like it has repeated values 
 #but it is just the arrdestid,depdestid, copid, capid input data
-print(c.fetchone())
-c.execute("SELECT * FROM WorkSchedule WHERE PilotID = '9';")
-print(c.fetchone())
+#print(c.fetchone())
+#c.execute("SELECT * FROM WorkSchedule WHERE PilotID = '9';")
+#print(c.fetchone())
 
 def menu(): #created menu function 
     print("[1] Add Flight")

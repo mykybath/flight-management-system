@@ -1,5 +1,4 @@
 import sqlite3
-conn = sqlite3.connect('flight.db')
 
-c = conn.cursor()
-
+def get_connection():
+    return sqlite3.connect("flight.db")

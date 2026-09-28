@@ -11,15 +11,10 @@ INSERT INTO Pilot VALUES(10,'J01234567','Sophia','Clark','555-0110','sophiaclark
 INSERT INTO Pilot VALUES(12,'L23456789','Ava','Walker','555-0112','avawalker@mykairways.com','909 Elm St, Brookside');
 INSERT INTO Pilot VALUES(13,'M34567890','James','Allen','555-0113','jamesallen@mykairways.com','111 Pine St, Plainfield');
 INSERT INTO Pilot VALUES(14,'N45678901','Charlotte','Young','555-0114','charlotteyoung@mykairways.com','222 Oak St, Stonehill');
-INSERT INTO Pilot VALUES(15,'12','ha','ba','ha','12','12 f');
 INSERT INTO Pilot VALUES(16,'I12345678','Kim','Kardashian','Kimk@mykairways.com','123-456','Kim K Mansion');
 INSERT INTO Pilot VALUES(17,'K12345678','Tom','Holland','spiderman@mykairways.com','123-456','64 Zoo Lane');
-INSERT INTO Pilot VALUES(18,'1','2','3','4','5','6');
-INSERT INTO Pilot VALUES(19,'','','','','','');
-INSERT INTO Pilot VALUES(20,'d','d','d','d','d','d');
-INSERT INTO Pilot VALUES(21,'f','f','f','f','f','f');
-INSERT INTO Pilot VALUES(22,'g','f','f','f','ff','f');
-INSERT INTO Pilot VALUES(23,'wg','gwr','gw','w','we','ew');
+
+
 
 INSERT INTO Destination VALUES(1,'USA','New York','JFK','PST');
 INSERT INTO Destination VALUES(2,'USA','Los Angeles','LAX','PST');
@@ -39,7 +34,8 @@ INSERT INTO Destination VALUES(15,'South Africa','Cape Town','CPT','SAST');
 INSERT INTO Destination VALUES(16,'Zimbabwe','Harare','HAR','CAT');
 INSERT INTO Destination VALUES(17,'China','Hong Kong','CFK','WEE');
 INSERT INTO Destination VALUES(18,'Uruguay','Montevideo','CIA','IDK');
-CREATE TABLE WorkSchedule ( WorkScheduleID INTEGER PRIMARY KEY, PilotID INTEGER NOT NULL, Dayoftheweek VARCHAR(10) NOT NULL, StartTime TIME NOT NULL, EndTime TIME NOT NULL, TotalHours SMALLINT NOT NULL, FOREIGN KEY (PilotID) REFERENCES Pilot(PilotID) );
+
+
 INSERT INTO WorkSchedule VALUES(1,1,'Monday','08:00','16:00',8);
 INSERT INTO WorkSchedule VALUES(2,2,'Monday','09:00','17:00',8);
 INSERT INTO WorkSchedule VALUES(3,3,'Tuesday','08:00','16:00',8);
